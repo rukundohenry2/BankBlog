@@ -1,0 +1,122 @@
+body{
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    
+    .signsection{
+        height: 90vh;
+        padding-top: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
+            width: 40%;
+        }
+        
+        .signbox{
+            
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            align-items: center;
+            background-color: rgba(181, 181, 181, 0.101);
+            border-radius: 10px;
+            box-shadow: 0px 2px 2px rgb(135, 135, 135);
+            height: fit-content;
+            gap: 20px;
+            padding: 0px 0px 40px 0px;
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                height: 100%;
+                gap: 20px;
+                .userpass{
+                    width: 80%;
+                    padding: 15px;
+                    border: none;
+                }
+                .Henrybtn{
+                    padding: 10px 15px 10px 15px;
+                    border: none;
+                    width: 80%;
+                    background-color: #707070;
+                    color: white;
+                    
+                }
+            }
+            .signhead{
+                font-size: x-large;
+                font-weight: bold;
+            }
+            
+        }
+    }
+
+
+    nav{
+        width: -webkit-fill-available;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: white;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px 5px 10px ;
+        box-shadow: 2px 2px 2px rgb(135, 135, 135);
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            
+            p{
+                height: fit-content;
+               
+            }
+        }
+        .searchbar{
+            display: flex;
+            align-items: center;
+            border: rgb(209, 209, 209) 2px solid;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+            img{
+                width : 20px;
+                height: 20px;
+            }
+            input{
+                border-radius: 10px;
+                width: 40vw;
+                height: 30px;
+                border: 0px;
+                padding-left: 5px;
+            padding-right: 5px;
+                
+            }
+            input:focus{
+                outline: none !important;
+    
+                //border:0px solid red;
+                
+            }
+        }
+        .navicons{
+            display: flex;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,177 @@
+body{
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    nav{
+        width: -webkit-fill-available;
+        position: fixed;
+        top: 0px;
+        background-color: white;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px 5px 10px ;
+        box-shadow: 2px 2px 2px rgb(135, 135, 135);
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            
+            p{
+                height: fit-content;
+               
+            }
+        }
+        .searchbar{
+            display: flex;
+            align-items: center;
+            border: rgb(209, 209, 209) 2px solid;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+            img{
+                width : 20px;
+                height: 20px;
+            }
+            input{
+                border-radius: 10px;
+                width: 40vw;
+                height: 30px;
+                border: 0px;
+                padding-left: 5px;
+            padding-right: 5px;
+                
+            }
+            input:focus{
+                outline: none !important;
+
+                //border:0px solid red;
+                
+            }
+        }
+        .navicons{
+            display: flex;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .restbody{
+        display: flex;
+        margin-top: 80px;
+        gap: 20px;
+        .navigation{
+            width: 20%;
+            padding: 20px;
+            
+        }
+        .blogsection{
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .article{
+                box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+                padding: 20px;
+                border-radius: 10px;
+                .articlehead{
+                    font-size: larger;
+                    font-weight: bold;
+                }
+                .articlepara{
+                    text-align: justify;
+                }
+                .person{
+                    display: flex;
+                    gap :10px;
+                    
+                    align-items: center;
+                    background-color: #70707013;
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    img{
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                    }
+                    .personal{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                       
+                        height: fit-content;
+                        .bloggerName{
+                            margin: 0px;
+                        }
+                        .articledate{
+                            margin: 0px;
+                        }
+                    } 
+                }
+                .likeComm{
+                    margin-top: 20px;
+                    padding-left: 20px;
+                    display: flex;
+                    gap: 20px;
+                    .like{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        a{
+                            img{
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                        
+                    }
+                    .comment{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .aboutsection{
+            width: 20%;
+        }
+    }
+}
+
+            // $sql = "SELECT * FROM article Order by idArticle DESC";
+            // $result = $conn->query($sql);
+    
+            // if ($result->num_rows > 0) {
+            //     // output data of each row
+            //     while($rowarticle = $result->fetch_assoc()) {
+            //         $articleid = $rowarticle["idArticle"];
+            //         $articledate = $rowarticle["Date"];
+            //         $articletitle = $rowarticle["title"];
+            //         $anoSql = "SELECT * FROM `articleparagraph` WHERE Article_idArticle = ".strval($articleid) ;
+            //         $anoresult = $conn->query($anoSql);
+            //         ?>
+            //     <p class="articlehead"><?php echo $articletitle." " ?></p>
+            //     <?php
+            //         while($pararow = $anoresult->fetch_assoc()) {
+                    
+            //             echo "id: " . $pararow["Article_idArticle"];
+            //         }
+            //         echo "id: " . $rowarticle["idArticle"];
+            //     }
+            // } else {
+            //     echo "0 results";
+            // }
