@@ -33,7 +33,7 @@ body .signsection .signbox form {
   width: 100%;
   align-items: center;
   height: 100%;
-  gap: 20px;
+  gap: 10px;
 }
 body .signsection .signbox form .userpass {
   width: 80%;

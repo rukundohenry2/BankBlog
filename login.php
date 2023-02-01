@@ -13,9 +13,9 @@
         <img src="media/signup/icon-4102192_1280.png" alt="">
         <div class="signbox">
             <p class="signhead">SignIn</p>
-            <form action="includes/signin.php" method="POST">
-                <input class="userpass" name="email" type="text" placeholder="Johndoe@email.com">
-                <input class="userpass" name="password" type="password"  id="myInput" placeholder="Password">
+            <form action="includes/signin.inc.php" method="POST">
+                <input class="userpass" name="uemail" type="text" placeholder="Johndoe@email.com">
+                <input class="userpass" name="upassword" type="password"  id="myInput" placeholder="Password">
                 <div class="showpass">
                     <!-- An element to toggle between password visibility -->
                     <input type="checkbox" onclick="myFunction()">
@@ -24,6 +24,16 @@
                 <button class="Henrybtn" type="submit" name= "login_user">Signin</button>
                 
             </form>
+            <?php
+                if (isset($_GET["error"])){
+                    if ($_GET["error"] == "emptyfield"){
+                        echo "<p class='errorwarn'>Fill in all the Fields!</p>";
+                    }
+                    else if ($_GET["error"] == "stmtfailed"){
+                        echo "<p class='errorwarn'>Something went wrong during  signin</p>";
+                    }
+                }
+            ?>
             <p>Dont have an account?<a href="signup.php">Signup</a></p>
         </div>
     </div>
