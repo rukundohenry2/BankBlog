@@ -1,0 +1,235 @@
+body{
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    nav{
+        width: -webkit-fill-available;
+        position: fixed;
+        top: 0px;
+        background-color: white;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px 5px 10px ;
+        box-shadow: 2px 2px 2px rgb(135, 135, 135);
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            
+            p{
+                height: fit-content;
+               
+            }
+        }
+        .searchbar{
+            display: flex;
+            align-items: center;
+            border: rgb(209, 209, 209) 2px solid;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 10px;
+            img{
+                width : 20px;
+                height: 20px;
+            }
+            input{
+                border-radius: 10px;
+                width: 40vw;
+                height: 30px;
+                border: 0px;
+                padding-left: 5px;
+            padding-right: 5px;
+                
+            }
+            input:focus{
+                outline: none !important;
+
+                //border:0px solid red;
+                
+            }
+        }
+        .navicons{
+            display: flex;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .profileimg{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .profdrop{
+                p{
+                    margin: 0;
+                    padding: 0;
+                }
+                .logout{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    .restbody{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 100px;
+        
+        .navigation{
+            width: 15%;
+            height: fit-content;
+            border-radius: 10px;
+            padding: 10px 10px 10px 10px ;
+            box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+            position: fixed;
+            top: 100px;
+            left: 10px;
+            
+
+            .menuheading{
+                margin: 0;
+                padding: 0;
+                font-size: larger;
+                font-weight: bold;
+            }
+            .menu{
+                display: flex;
+                flex-direction: column;
+                padding: 10px 10px 10px 10px ;
+                gap: 10px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        color: black;
+                    }
+                    img{
+                        width: 23px;
+                    }
+                }
+            }
+        }
+        .profile{
+            height: fit-content;
+            width: 80%;
+            margin-right: 10px;
+            margin-bottom: 20px;
+
+            
+            .profilehead{
+                display: flex;
+                gap: 20px;
+                align-items: flex-end;
+                //background-color:#E1D2B3 ;
+                padding: 20px;
+                box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+                border-radius: 10px;
+                .profileimg{
+                    width: 20%;
+                    border-radius: 50%;
+                }
+                p{
+                    font-size: 50px;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .profilemenu{
+                box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+                border-radius: 10px;
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                gap: 20px;
+
+                .menuitem{
+                    display: flex;
+                    text-decoration: none;
+                    color: black;
+                    align-items: center;
+                    gap: 5px;
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+            .newarticle{
+                margin-top: 20px;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+                .composehead{
+                    font-weight: bold;
+                    font-size: larger;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .textheading{
+                        display: flex;
+                        justify-content: space-between;
+                        .titlebox{
+                            width: 80%;
+                            padding: 10px;
+                            border: none;
+                            background-color: antiquewhite;
+                        }
+                    }
+                    .textpara{
+                        display: flex;
+                        justify-content: space-between;
+                        textarea{
+                            width: 80%;
+                            border: none;
+                            background-color: antiquewhite;
+                            padding: 10px;
+                        }
+                    }
+                    .henrybtn{
+                        width: 300px;
+                        padding: 10px;
+                        background-color: #707070;
+                        color: white;
+                        border: none;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}

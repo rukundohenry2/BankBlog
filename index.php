@@ -37,6 +37,14 @@
                     <img src='media/icons/icons8_news_96px_1.png' alt=''>
                     <p>News</p>
                 </a>
+                <a href=''>
+                    <img src='media/icons/icons8_news_96px_1.png' alt=''>
+                    <p>News</p>
+                </a>
+                <a href='profile.php'>
+                    <img src='media/icons/icons8_user_male_104px.png' alt=''>
+                    <p>Profile</p>
+                </a>
             </div>
         </div>
 

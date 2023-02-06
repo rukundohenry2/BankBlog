@@ -1,0 +1,257 @@
+body {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+}
+body nav {
+  width: -webkit-fill-available;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 2px 2px 2px rgb(135, 135, 135);
+}
+body nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body nav .logo img {
+  width: 70px;
+  height: 70px;
+}
+body nav .logo p {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body nav .searchbar {
+  display: flex;
+  align-items: center;
+  border: rgb(209, 209, 209) 2px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+body nav .searchbar img {
+  width: 20px;
+  height: 20px;
+}
+body nav .searchbar input {
+  border-radius: 10px;
+  width: 40vw;
+  height: 30px;
+  border: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+body nav .searchbar input:focus {
+  outline: none !important;
+}
+body nav .navicons {
+  display: flex;
+}
+body nav .navicons img {
+  width: 40px;
+  height: 40px;
+}
+body nav .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body nav .profile .profileimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+body nav .profile .profdrop p {
+  margin: 0;
+  padding: 0;
+}
+body nav .profile .profdrop .logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body nav .profile .profdrop .logout a {
+  text-decoration: none;
+}
+body nav .profile .profdrop .logout img {
+  width: 20px;
+  height: 20px;
+}
+body .restbody {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+body .restbody .navigation {
+  width: 15%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+  position: fixed;
+  top: 100px;
+  left: 10px;
+}
+body .restbody .navigation .menuheading {
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+  font-weight: bold;
+}
+body .restbody .navigation .menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+  gap: 10px;
+}
+body .restbody .navigation .menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+body .restbody .navigation .menu a p {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+body .restbody .navigation .menu a img {
+  width: 23px;
+}
+body .restbody .profile {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80%;
+  margin-right: 10px;
+}
+body .restbody .profile .profilehead {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  padding: 20px;
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+  border-radius: 10px;
+}
+body .restbody .profile .profilehead .profileimg {
+  width: 20%;
+  border-radius: 50%;
+}
+body .restbody .profile .profilehead p {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+body .restbody .profile .profilemenu {
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+body .restbody .profile .profilemenu .menuitem {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  gap: 5px;
+}
+body .restbody .profile .profilemenu .menuitem img {
+  width: 15px;
+  height: 15px;
+}
+body .restbody .profile .profilemenu .menuitem p {
+  margin: 0;
+  padding: 0;
+}
+body .restbody .profile .articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .restbody .profile .articles .article {
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+body .restbody .profile .articles .article .edittab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .restbody .profile .articles .article .edittab .articlehead {
+  font-size: larger;
+  font-weight: bold;
+}
+body .restbody .profile .articles .article .edittab a {
+  text-decoration: none;
+}
+body .restbody .profile .articles .article .edittab a img {
+  width: 15px;
+}
+body .restbody .profile .articles .article .articlepara {
+  text-align: justify;
+}
+body .restbody .profile .articles .article .person {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: rgba(112, 112, 112, 0.0745098039);
+  padding: 10px;
+  border-radius: 10px;
+}
+body .restbody .profile .articles .article .person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+body .restbody .profile .articles .article .person .personal {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .restbody .profile .articles .article .person .personal .bloggerName {
+  margin: 0px;
+}
+body .restbody .profile .articles .article .person .personal .articledate {
+  margin: 0px;
+}
+body .restbody .profile .articles .article .likeComm {
+  margin-top: 20px;
+  padding-left: 20px;
+  display: flex;
+  gap: 20px;
+}
+body .restbody .profile .articles .article .likeComm .like {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .restbody .profile .articles .article .likeComm .like a img {
+  width: 25px;
+  height: 25px;
+}
+body .restbody .profile .articles .article .likeComm .comment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .restbody .profile .articles .article .likeComm .comment img {
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,221 @@
+body {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+}
+body nav {
+  width: -webkit-fill-available;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 2px 2px 2px rgb(135, 135, 135);
+}
+body nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body nav .logo img {
+  width: 70px;
+  height: 70px;
+}
+body nav .logo p {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body nav .searchbar {
+  display: flex;
+  align-items: center;
+  border: rgb(209, 209, 209) 2px solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+body nav .searchbar img {
+  width: 20px;
+  height: 20px;
+}
+body nav .searchbar input {
+  border-radius: 10px;
+  width: 40vw;
+  height: 30px;
+  border: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+body nav .searchbar input:focus {
+  outline: none !important;
+}
+body nav .navicons {
+  display: flex;
+}
+body nav .navicons img {
+  width: 40px;
+  height: 40px;
+}
+body nav .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body nav .profile .profileimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+body nav .profile .profdrop p {
+  margin: 0;
+  padding: 0;
+}
+body nav .profile .profdrop .logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body nav .profile .profdrop .logout a {
+  text-decoration: none;
+}
+body nav .profile .profdrop .logout img {
+  width: 20px;
+  height: 20px;
+}
+body .restbody {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+body .restbody .navigation {
+  width: 15%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+  position: fixed;
+  top: 100px;
+  left: 10px;
+}
+body .restbody .navigation .menuheading {
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+  font-weight: bold;
+}
+body .restbody .navigation .menu {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+  gap: 10px;
+}
+body .restbody .navigation .menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+body .restbody .navigation .menu a p {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+body .restbody .navigation .menu a img {
+  width: 23px;
+}
+body .restbody .profile {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 80%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+body .restbody .profile .profilehead {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  padding: 20px;
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+  border-radius: 10px;
+}
+body .restbody .profile .profilehead .profileimg {
+  width: 20%;
+  border-radius: 50%;
+}
+body .restbody .profile .profilehead p {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+body .restbody .profile .profilemenu {
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+body .restbody .profile .profilemenu .menuitem {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  gap: 5px;
+}
+body .restbody .profile .profilemenu .menuitem img {
+  width: 15px;
+  height: 15px;
+}
+body .restbody .profile .profilemenu .menuitem p {
+  margin: 0;
+  padding: 0;
+}
+body .restbody .profile .newarticle {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 2px rgb(135, 135, 135);
+}
+body .restbody .profile .newarticle .composehead {
+  font-weight: bold;
+  font-size: larger;
+}
+body .restbody .profile .newarticle form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .restbody .profile .newarticle form .textheading {
+  display: flex;
+  justify-content: space-between;
+}
+body .restbody .profile .newarticle form .textheading .titlebox {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  background-color: antiquewhite;
+}
+body .restbody .profile .newarticle form .textpara {
+  display: flex;
+  justify-content: space-between;
+}
+body .restbody .profile .newarticle form .textpara textarea {
+  width: 80%;
+  border: none;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+body .restbody .profile .newarticle form .henrybtn {
+  width: 300px;
+  padding: 10px;
+  background-color: #707070;
+  color: white;
+  border: none;
+  align-self: center;
+}
